@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Eha Konveksi | Home</title>
+
+    <link href="./dist/output.css" rel="stylesheet" />
+
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/img/icon/eha-1.png">
+    <!-- <link rel="manifest" href="/assets/img/favicons/manifest.json">
+    <meta name="msapplication-TileImage" content="/assets/img/favicons/mstile-150x150.png"> -->
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: '#0b1a33',
+            navySoft: '#12284d'
+          }
+        }
+      }
+    }
+</script>
+
+<body>
+
+    <!-- Tombol Pop Up WhatsApp -->
+    <div class="fixed bottom-4 right-4 z-50 flex items-center gap-3 group">
+    <span class="bg-white text-gray-800 px-4 py-2 rounded-lg shadow-md text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none border border-gray-100 relative">
+        Kami Siap Membantu kebutuhan Anda &rarr;
+        <span class="absolute top-1/2 -right-1 -translate-y-1/2 w-2 h-2 bg-white rotate-45 border-t border-r border-gray-100"></span>
+    </span>
+
+    <a href="https://wa.me/6282211711911?text=Halo Eha Konveksi, saya ingin bertanya tentang produk Anda." 
+        class="bg-green-300 text-white w-14 h-14 flex items-center justify-center rounded-full shadow-lg transform hover:scale-110 transition-transform duration-200"
+        target="_blank" 
+        aria-label="Hubungi kami via WhatsApp">
+        <img src="./assets/img/icon/wa.png" alt="WA" class="w-8 h-8">
+    </a>
+    </div>
+    <!-- Akhir Tombol Pop Up WhatsApp -->
+
+    <main class="main" id="top">
+
+        <!-- Awal Bagian Navbar -->
+        <nav class="bg-white shadow-md sticky top-0 z-50">
+            <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+                <a class="flex items-center" href="/index.html">
+                    <img src="/assets/img/icon/eha-2.png" height="55" alt="logo" class="h-14" />
+                </a>
+
+                <div class="space-x-8 hidden md:flex items-center" id="navbar-menu-desktop">
+                    <ul class="flex space-x-6 text-gray-600">
+                        <li><a class="hover:text-blue-600 transition duration-300 font-medium" href="#top">Beranda</a></li>
+                        <li><a class="hover:text-blue-600 transition duration-300 font-medium" href="/portfolio/index.html">Portfolio</a></li>
+                        <li><a class="hover:text-blue-600 transition duration-300 font-medium" href="#penawaran">Penawaran</a></li>
+                        <li><a class="hover:text-blue-600 transition duration-300 font-medium" href="#kontak">Kontak</a></li>
+                        <li><a class="hover:text-blue-600 transition duration-300 font-medium" href="#sosial-media">Sosial Media</a></li>
+                        <li><a class="hover:text-blue-600 transition duration-300 font-medium" href="/tentang-kami.html">Tentang Kami</a></li>
+                    </ul>
+                </div>
+
+                <!-- <a href="#kontak" class="bg-slate-900 text-white px-4 py-2 rounded-lg text-sm">
+                        Konsultasi
+                </a> -->
+
+                <button id="mobile-menu-button" class="md:hidden text-gray-600 focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+
+            <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+                <a href="#top" class="block py-3 px-6 text-gray-700 hover:bg-gray-100 transition duration-300">Beranda</a>
+                <a href="/portfolio/index.html" class="block py-3 px-6 text-gray-700 hover:bg-gray-100 transition duration-300">Portfolio</a>
+                <a href="#penawaran" class="block py-3 px-6 text-gray-700 hover:bg-gray-100 transition duration-300">Penawaran</a>
+                <a href="#kontak" class="block py-3 px-6 text-gray-700 hover:bg-gray-100 transition duration-300">Kontak</a>
+                <a href="#sosial-media" class="block py-3 px-6 text-gray-700 hover:bg-gray-100 transition duration-300">Sosial Media</a>
+                <a href="/tentang-kami.html" class="block py-3 px-6 text-gray-700 hover:bg-gray-100 transition duration-300">Tentang Kami</a>
+            </div>
+        </nav>
+        <!-- Akhir Bagian Navbar -->
+
+        <!-- Awal Bagian Judul dan Gambar Awal -->
+        <section class="pt-20 mb-100 bg-gradient-to-br from-navy to-navySoft text-white relative overflow-hidden">
+  
+            <!-- decorative shape -->
+            <div class="absolute -right-32 -top-32 w-[500px] h-[500px] bg-white/5 rounded-full"></div>
+
+            <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-3 sm:gap-4 md:gap-16 lg:gap-16 items-center relative z-10">
+                
+                <div>
+                    <h1 class="text-4xl md:text-5xl font-bold leading-tight">
+                        Jasa Konveksi & Vendor Konveksi  
+                        <span class="block text-blue-300 mt-2">
+                        Andal untuk Perusahaan & Instansi
+                        </span>
+                    </h1>
+
+                    <p class="mt-6 text-lg text-gray-200 max-w-xl">
+                        Produksi seragam kerja, jaket, rompi, kaos, jas hujan, dan apparel
+                        custom dengan sistem kerja profesional dan standar industri.
+                    </p>
+                    <!-- <p class="mt-6 text-lg text-gray-200 max-w-xl">
+                        Siap membantu kebutuhan seragam Anda dengan kualitas terjamin !
+                    </p> -->
+
+                    <div class="mt-10 flex gap-4">
+                        <a href="https://wa.me/6282211711911"
+                        class="bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-lg font-semibold shadow-lg transition">
+                        Konsultasi Gratis
+                        </a>
+                        <a href="#produk"
+                        class="border border-white/40 px-8 py-4 rounded-lg hover:bg-white/10 transition">
+                        Lihat Produk
+                        </a>
+                    </div>
+
+                    <!-- stats -->
+                    <div class="mt-12 grid grid-cols-3 gap-6 text-sm text-gray-200">
+                        <div>
+                            <p class="text-2xl font-bold text-white">10+</p>
+                            <p>Tahun Produksi</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl font-bold text-white">1000+</p>
+                            <p>Klien</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl font-bold text-white">10K+</p>
+                            <p>Produk / Bulan</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pb-8">
+                    <img src="/assets/img/latar2.png"
+                        class="rounded-2xl shadow-2xl"
+                        alt="Produksi Konveksi">
+                </div>
+            </div>
+        </section>
+        <!-- Akhir Bagian Judul dan Gambar Awal -->
+
+        <!-- Google Maps / Lokasi -->
+        <!-- <section>
+            <h3 class="text-2xl md:text-3xl font-bold text-center mb-4 mx-4">
+                Yuk Ngobrol dan Diskusi Langsung di Tempat Kami
+            </h3>
+            <div class="w-full h-80 md:h-[600px] rounded-lg shadow-lg overflow-hidden">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.485161171751!2d107.63414777475734!3d-6.951954593048297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e79416935f11%3A0x2ba09016d3e5ca6c!2sEha%20Konveksi!5e0!3m2!1sid!2sid!4v1755053581226!5m2!1sid!2sid"
+                    width="100%"
+                    height="100%"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section> -->
+        <!-- Akhir Google Maps / Lokasi -->
+
+        <section id="tentang" class="py-24">
+            <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                <h2 class="text-3xl font-bold text-navy mb-6">
+                    Konveksi dengan Sistem Kerja Terukur
+                </h2>
+                <p class="text-lg text-gray-600 leading-relaxed">
+                    EHA Konveksi melayani kebutuhan apparel kerja untuk perusahaan,
+                    instansi, dan organisasi dengan fokus pada kualitas, konsistensi,
+                    dan ketepatan waktu. Seluruh proses dilakukan oleh tim internal
+                    dengan pengawasan standar produksi.
+                </p>
+                </div>
+                <div class="grid grid-cols-2 gap-6">
+                <div class="p-6 border rounded-xl">
+                    <p class="text-2xl font-bold text-navy">Tangan Pertama</p>
+                    <p class="text-gray-600">Harga Tangan Pertama Langsung dari pabrik</p>
+                </div>
+                <div class="flex flex-col p-6 border rounded-xl">
+                    <p class="text-2xl font-bold text-navy text-blue-600">Kapasitas Besar</p>
+                    <p class="text-gray-600">Siap Membantu kebutuhan Seragam anda secara besar</p>
+                </div>
+                <div class="p-6 border rounded-xl">
+                    <p class="text-2xl font-bold text-navy">Tepat Waktu</p>
+                    <p class="text-gray-600">Pengerjaan Cepat & Tepat Waktu</p>
+                </div>
+                <div class="p-6 border rounded-xl">
+                    <p class="text-2xl font-bold text-navy">Garansi Produk</p>
+                    <p class="text-gray-600">Kami siap memberikan garansi produk</p>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bagian Penawaran -->
+        <!-- <section id="penawaran" class="mt-8 mb-4 px-4 bg-blue-950 py-8 shadow-md text-white">
+            <div class="text-center">
+                <h4 class="font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl text-white mb-2">
+                Anda Punya Kebutuhan Jaket, Rompi, Jas Hujan, Kemeja, Kaos, atau lainnya Untuk Seragam Tim, Komunitas, Perusahaan, Instansi, atau Sekolah?
+                </h4>
+                <p class="text-left mb-4 text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-white px-2 md:px-12">
+                Ingin :
+                </p>
+
+                <ul class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 place-items-center text-secondary">
+                <li class="flex items-center gap-2">
+                    <img src="/assets/img/icon/cheklist.png" class="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" alt="">
+                    <span class="text-0.5xl sm:text-sm md:text-lg lg:text-2xl font-medium">Bahan Berkualitas?</span>
+                </li>
+                <li class="flex items-center gap-2">
+                    <img src="/assets/img/icon/cheklist.png" class="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" alt="">
+                    <span class="text-0.5xl sm:text-sm md:text-lg lg:text-2xl font-medium">Jahitan Rapi?</span>
+                </li>
+                <li class="flex items-center gap-2">
+                    <img src="/assets/img/icon/cheklist.png" class="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" alt="">
+                    <span class="text-0.5xl sm:text-sm md:text-lg lg:text-2xl font-medium">Bordir Presisi?</span>
+                </li>
+                <li class="flex items-center gap-2">
+                    <img src="/assets/img/icon/cheklist.png" class="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" alt="">
+                    <span class="text-0.5xl sm:text-sm md:text-lg lg:text-2xl font-medium">Harga Kompetitif?</span>
+                </li>
+                </ul>
+            </div>
+        </section> -->
+        <!-- Akhir Bagian Penawaran -->
+
+        <!-- <section>
+            <div class="text-center mr-4 ml-4">
+                    <h1 class="font-bold text-3xl md:text-4xl text-gray-900 mb-4">
+                        Jaket, Rompi, Jas Hujan, Seragam, Kaos dan Lainnya?
+                    </h1>
+                    <p class="mb-5 text-info text-blue-600 font-medium">
+                        Melayani berbagai kebutuhan konveksi dengan hasil rapi, cepat, dan terpercaya.
+                    </p>
+                    <a href="#!"><button class="bg-blue-500 text-white font-medium py-2 px-6 rounded-full shadow-lg hover:bg-yellow-600 transition-colors mb-5">Konsultasi dan Sampel Gratis</button></a>
+                </div>
+        </section> -->
+
+        <!-- Awal Bagian Penawaran 2 -->
+        <!-- <section id="about-us" class="py-3 bg-white">
+            <div class="container mx-auto px-10">
+                <div class="text-left">
+                    <h3 class="font-bold text-2xl md:text-3xl mb-4 mt-4 md:mt-8 text-gray-900">
+                        Anda Berada di Tempat yang Benar!
+                    </h3>
+                    <p class="text-gray-600 leading-relaxed text-justify md:text-lg">
+                        <span class="font-semibold text-gray-800">Eha Konveksi</span> berpengalaman lebih dari <span class="font-semibold">13 tahun</span> 
+                        dengan tim yang profesional & telah dipercaya oleh 
+                        <span class="font-bold text-indigo-600">3.261+</span> perusahaan, instansi, 
+                        & komunitas di seluruh Indonesia.
+                    </p>
+                </div>
+            </div>
+        </section> -->
+        <!-- Akhir Bagian Penawaran 2 -->
+
+
+        <!-- Awal Bagian Produk Kami -->
+        <section id="produk" class="bg-gray-50 py-24">
+            <div class="max-w-7xl mx-auto px-6">
+                <h2 class="text-center text-3xl font-bold text-navy mb-14">
+                Produk Unggulan
+                </h2>
+
+                <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-10">
+                    <div class="group bg-white text-center p-8 rounded-xl shadow hover:shadow-xl transition">
+                        <img 
+                            src="assets/img/produk/Seragam/4.jpeg" 
+                            alt="Seragam Kerja"
+                            class="w-full h-auto object-fill rounded-lg mb-4"
+                        >
+                        <h4 class="font-semibold text-lg mb-2">Seragam Kerja</h4>
+                        <p class="text-gray-600 text-sm">Kantor, pabrik, lapangan</p>
+                        <a href="/portfolio/seragam.html"
+                            class="block mt-4 bg-blue-600 hover:bg-blue-700 py-2 rounded-lg font-semibold shadow-lg transition text-white">
+                                Cek Portfolio
+                        </a>
+                    </div>
+                    <div class="group bg-white p-8 rounded-xl shadow hover:shadow-xl transition text-center">
+                        <img 
+                            src="assets/img/produk/jaket/5.jpeg" 
+                            alt="Seragam Kerja"
+                            class="w-full h-auto object-fill rounded-lg mb-4"
+                        >
+                        <h4 class="font-semibold text-lg mb-2">Jaket</h4>
+                        <p class="text-gray-600 text-sm">Bomber, varsity, parka</p>
+                        <a href="/portfolio/jaket.html"
+                            class="block mt-4 bg-blue-600 hover:bg-blue-700 py-2 rounded-lg font-semibold shadow-lg transition text-white">
+                                Cek Portfolio
+                        </a>
+                    </div>
+                    <div class="group bg-white p-8 rounded-xl shadow hover:shadow-xl transition text-center">
+                        <img 
+                            src="assets/img/produk/rompi/5.jpeg" 
+                            alt="Seragam Kerja"
+                            class="w-full h-auto object-fill rounded-lg mb-4"
+                        >
+                        <h4 class="font-semibold text-lg mb-2">Rompi</h4>
+                        <p class="text-gray-600 text-sm">Safety & event</p>
+                        <a href="/portfolio/rompi.html"
+                            class="block mt-4 bg-blue-600 hover:bg-blue-700 py-2 rounded-lg font-semibold shadow-lg transition text-white">
+                                Cek Portfolio
+                        </a>
+                    </div>
+                    <div class="group bg-white p-8 rounded-xl shadow hover:shadow-xl transition text-center">
+                        <img 
+                            src="assets/img/produk/Kaos/kaos1.jpeg" 
+                            alt="Seragam Kerja"
+                            class="w-full h-auto object-fill rounded-lg mb-4"
+                        >
+                        <h4 class="font-semibold text-lg mb-2">Kaos</h4>
+                        <p class="text-gray-600 text-sm">Cotton combed</p>
+                        <a href="/portfolio/kaos.html"
+                            class="block mt-4 bg-blue-600 hover:bg-blue-700 py-2 rounded-lg font-semibold shadow-lg transition text-white">
+                                Cek Portfolio
+                        </a>
+                    </div>
+                    <div class="group bg-white p-8 rounded-xl shadow hover:shadow-xl transition text-center">
+                        <img 
+                            src="assets/img/produk/jas-hujan/4.jpeg" 
+                            alt="Seragam Kerja"
+                            class="w-full h-auto object-fill rounded-lg mb-4"
+                        >
+                        <h4 class="font-semibold text-lg mb-2">Jas Hujan</h4>
+                        <p class="text-gray-600 text-sm">Custom logo</p>
+                        <a href="/portfolio/jas-hujan.html"
+                            class="block mt-4 bg-blue-600 hover:bg-blue-700 py-2 rounded-lg font-semibold shadow-lg transition text-white">
+                                Cek Portfolio
+                        </a>
+                    </div>
+                    <!-- <div class="group bg-white p-8 rounded-xl shadow hover:shadow-xl transition text-center">
+                        <img 
+                            src="assets/img/produk//4.jpeg" 
+                            alt="Seragam Kerja"
+                            class="w-full h-auto object-fill rounded-lg mb-4"
+                        >
+                        <h4 class="font-semibold text-lg mb-2">Topi & Aksesoris</h4>
+                        <p class="text-gray-600 text-sm">Merchandise</p>
+                        <a href="https://wa.me/6282211711911"
+                            class="block mt-4 bg-blue-600 hover:bg-blue-700 py-2 rounded-lg font-semibold shadow-lg transition text-white">
+                                Cek Portfolio
+                        </a>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+        <!-- <section class="bg-blue-950 py-4 mt-3" id="produk">
+            <div class="container mx-auto px-4 text-center">
+                <div class="max-w-xl mx-auto mb-10">
+                    <h5 class="font-extrabold text-2xl md:text-4xl leading-tight mb-3 text-white">Lihat Hasil Produksi Kami</h5>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-8">
+                    <div class="mb-3">
+                        <img class="w-full aspect-square object-cover rounded-lg" src="/assets/img/produk/Seragam/3.jpeg" alt="Foto Produk 1" />
+                        <p class="font-bold text-white text-center mt-3">Wearpack</p>
+                        <a href="/portfolio/seragam.html"><button class="bg-blue-600 text-white font-medium py-2 px-6 rounded-full shadow-lg hover:bg-blue-700 transition-colors mt-3">Cek Portfolio</button></a>
+                    </div>
+                    <div class="mb-3">
+                        <img class="w-full aspect-square object-cover rounded-lg" src="/assets/img/produk/Seragam/19.jpeg" alt="Foto Produk 1" />
+                        <p class="font-bold text-white text-center mt-3">Kemeja | PDH</p>
+                        <a href="/portfolio/seragam.html"><button class="bg-blue-600 text-white font-medium py-2 px-6 rounded-full shadow-lg hover:bg-blue-700 transition-colors mt-3">Cek Portfolio</button></a>
+                    </div>
+                    <div class="mb-3">
+                        <img class="w-full aspect-square object-cover rounded-lg" src="/assets/img/produk/jaket/5.jpeg" alt="Foto Produk 2" />
+                        <p class="font-bold text-white text-center mt-3">Jaket</p>
+                        <a href="/portfolio/jaket.html"><button class="bg-blue-600 text-white font-medium py-2 px-6 rounded-full shadow-lg hover:bg-blue-700 transition-colors mt-3">Cek Portfolio</button></a>
+                    </div>
+                    <div class="mb-3">
+                        <img class="w-full aspect-square object-cover rounded-lg" src="/assets/img/produk/rompi/1.jpg" alt="Foto Produk 3" />
+                        <p class="font-bold text-white text-center mt-3">Rompi</p>
+                        <a href="/portfolio/rompi.html"><button class="bg-blue-600 text-white font-medium py-2 px-6 rounded-full shadow-lg hover:bg-blue-700 transition-colors mt-3">Cek Portfolio</button></a>
+                    </div>
+                    <div class="mb-3">
+                        <img class="w-full aspect-square object-cover rounded-lg" src="/assets/img/produk/jas-hujan/1.jpeg" alt="Foto Produk 4" />
+                        <p class="font-bold text-white text-center mt-3">Jas Hujan</p>
+                        <a href="/portfolio/jas-hujan.html"><button class="bg-blue-600 text-white font-medium py-2 px-6 rounded-full shadow-lg hover:bg-blue-700 transition-colors mt-3">Cek Portfolio</button></a>
+                    </div>
+                    <div class="mb-3">
+                        <img class="w-full aspect-square object-cover rounded-lg" src="/assets/img/produk/Kaos/kaos1.jpeg" alt="Foto Produk 5" />
+                        <p class="font-bold text-white text-center mt-3">Kaos</p>
+                        <a href="/portfolio/kaos.html"><button class="bg-blue-600 text-white font-medium py-2 px-6 rounded-full shadow-lg hover:bg-blue-700 transition-colors mt-3">Cek Portfolio</button></a>
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <a href="https://wa.me/6282211711911?text=Halo Eha Konveksi, saya ingin bertanya tentang produk Anda." target="_blank"><button class="bg-blue-500 text-white font-medium py-2 px-6 rounded-full shadow-lg hover:bg-yellow-600 transition-colors mb-3">Konsultasi dan Sampel Gratis</button></a>
+                </div>
+            </div>
+        </section> -->
+        <!-- Akhir Bagian Produk Kami -->
+
+        <!-- ================= PROSES ================= -->
+        <section id="proses" class="py-24">
+            <div class="max-w-7xl mx-auto px-6">
+                <h2 class="text-center text-3xl font-bold text-navy mb-14">
+                Alur Pemesanan
+                </h2>
+
+                <div class="grid md:grid-cols-4 gap-10 text-center">
+                <div>
+                    <p class="text-5xl font-bold text-gray-200">01</p>
+                    <h4 class="font-semibold mt-2">Konsultasi</h4>
+                </div>
+                <div>
+                    <p class="text-5xl font-bold text-gray-200">02</p>
+                    <h4 class="font-semibold mt-2">Desain & Sample</h4>
+                </div>
+                <div>
+                    <p class="text-5xl font-bold text-gray-200">03</p>
+                    <h4 class="font-semibold mt-2">Produksi</h4>
+                </div>
+                <div>
+                    <p class="text-5xl font-bold text-gray-200">04</p>
+                    <h4 class="font-semibold mt-2">Pengiriman</h4>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Awal Bagian Klient Kami -->
+        <section class="my-10 pt-0 pb-6 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-2xl text-center font-semibold text-gray-800 pt-4 mb-4">Mereka Yang Sudah Mempercayakan Seragamnya Kepada Kami</h2>
+                <div class="overflow-hidden relative">
+                    <div class="flex space-x-12 py-4 animate-slide-left">
+                        <img src="/assets/img/icon/pertamina.png" alt="Logo Instansi 1" class="h-12 **flex-shrink-0** grayscale hover:grayscale-0 transition duration-300" />
+                        <img src="/assets/img/icon/bumn.png" alt="Logo Instansi 2" class="h-12 **flex-shrink-0** grayscale hover:grayscale-0 transition duration-300" />
+                        <img src="/assets/img/icon/dishub.png" alt="Logo Instansi 3" class="h-12 **flex-shrink-0** grayscale hover:grayscale-0 transition duration-300" />
+                        <img src="/assets/img/icon/kai.png" alt="Logo Instansi 4" class="h-12 **flex-shrink-0** grayscale hover:grayscale-0 transition duration-300" />
+                        <img src="/assets/img/icon/pln.png" alt="Logo Instansi 5" class="h-12 **flex-shrink-0** grayscale hover:grayscale-0 transition duration-300" />
+                        <img src="/assets/img/icon/polri.png" alt="Logo Instansi 6" class="h-12 **flex-shrink-0** grayscale hover:grayscale-0 transition duration-300" />
+                        <img src="/assets/img/icon/pos.png" alt="Logo Instansi 7" class="h-12 **flex-shrink-0** grayscale hover:grayscale-0 transition duration-300" />
+                        <img src="/assets/img/icon/sp-bca.png" alt="Logo Instansi 8" class="h-12 **flex-shrink-0** grayscale hover:grayscale-0 transition duration-300" />
+                        <img src="/assets/img/icon/menteri-tani.png" alt="Logo Instansi 9" class="h-12 **flex-shrink-0** grayscale hover:grayscale-0 transition duration-300" />
+                        <img src="/assets/img/icon/sucofindo.png" alt="Logo Instansi 10" class="h-12 **flex-shrink-0** grayscale hover:grayscale-0 transition duration-300" />
+                        <img src="/assets/img/icon/azhar.png" alt="Logo Instansi 1" class="h-12 **flex-shrink-0** grayscale hover:grayscale-0 transition duration-300" />
+                        <img src="/assets/img/icon/hero-food.png" alt="Logo Instansi 2" class="h-12 **flex-shrink-0** grayscale hover:grayscale-0 transition duration-300" />
+                        <img src="/assets/img/icon/pertamina.png" alt="Logo Instansi 1" class="h-12 **flex-shrink-0** grayscale hover:grayscale-0 transition duration-300" />
+                        <img src="/assets/img/icon/bumn.png" alt="Logo Instansi 2" class="h-12 **flex-shrink-0** grayscale hover:grayscale-0 transition duration-300" />
+                        <img src="/assets/img/icon/dishub.png" alt="Logo Instansi 3" class="h-12 **flex-shrink-0** grayscale hover:grayscale-0 transition duration-300" />
+                        <img src="/assets/img/icon/kai.png" alt="Logo Instansi 4" class="h-12 **flex-shrink-0** grayscale hover:grayscale-0 transition duration-300" />
+                        <img src="/assets/img/icon/pln.png" alt="Logo Instansi 5" class="h-12 **flex-shrink-0** grayscale hover:grayscale-0 transition duration-300" />
+                        <img src="/assets/img/icon/polri.png" alt="Logo Instansi 6" class="h-12 **flex-shrink-0** grayscale hover:grayscale-0 transition duration-300" />
+                        <img src="/assets/img/icon/pos.png" alt="Logo Instansi 7" class="h-12 **flex-shrink-0** grayscale hover:grayscale-0 transition duration-300" />
+                        <img src="/assets/img/icon/sp-bca.png" alt="Logo Instansi 8" class="h-12 **flex-shrink-0** grayscale hover:grayscale-0 transition duration-300" />
+                        <img src="/assets/img/icon/menteri-tani.png" alt="Logo Instansi 9" class="h-12 **flex-shrink-0** grayscale hover:grayscale-0 transition duration-300" />
+                        <img src="/assets/img/icon/sucofindo.png" alt="Logo Instansi 10" class="h-12 **flex-shrink-0** grayscale hover:grayscale-0 transition duration-300" />
+                        <img src="/assets/img/icon/azhar.png" alt="Logo Instansi 1" class="h-12 **flex-shrink-0** grayscale hover:grayscale-0 transition duration-300" />
+                        <img src="/assets/img/icon/hero-food.png" alt="Logo Instansi 2" class="h-12 **flex-shrink-0** grayscale hover:grayscale-0 transition duration-300" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Akhir Bagian Klient Kami -->
+         
+
+        <!-- Awal Bagian Workshop Kami -->
+        <section class="bg-blue-950 shadow-lg py-10 flex justify-center" id="workshop">
+            <div class="max-w-6xl w-full text-center px-4">
+                <h1 class="font-bold text-3xl md:text-4xl text-white mb-10">
+                Workshop Kami
+                </h1>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                     <!-- Video 1 -->
+                    <div class="flex flex-col items-center">
+                        <h2 class="text-xl md:text-2xl font-semibold text-white mb-4">
+                        Pengiriman Barang
+                        </h2>
+                        <div class="w-full aspect-video">
+                        <iframe class="w-full h-full rounded-lg shadow-md"
+                            src="https://www.youtube.com/embed/XaGurEA8NEA?si=mMJkLaUomCoaFWde"
+                            title="Workshop Cutting"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen>
+                        </iframe>
+                        </div>
+                    </div>
+
+                    <!-- Video 2 -->
+                    <div class="flex flex-col items-center">
+                        <h2 class="text-xl md:text-2xl font-semibold text-white mb-4">
+                        Workshop Cutting (Pemotongan)
+                        </h2>
+                        <div class="w-full aspect-video">
+                        <iframe class="w-full h-full rounded-lg shadow-md"
+                            src="https://www.youtube.com/embed/UKYwGxtINSY?si=03c1Og-4XULEfa04"
+                            title="Workshop Cutting"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen>
+                        </iframe>
+                        </div>
+                    </div>
+                    
+                    <!-- Video 3 -->
+                    <div class="flex flex-col items-center">
+                        <h2 class="text-xl md:text-2xl font-semibold text-white mb-4">
+                        Workshop Sewing (Jahit)
+                        </h2>
+                        <div class="w-full aspect-video">
+                        <iframe class="w-full h-full rounded-lg shadow-md"
+                            src="https://www.youtube.com/embed/UKYwGxtINSY?si=0oElwJu3F9c6CNUO" title="YouTube video player"
+                            title="Workshop Sewing (Jahit)"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen>
+                        </iframe>
+                        </div>
+                    </div>
+
+                    <!-- Video 4 -->
+                    <div class="flex flex-col items-center">
+                        <h2 class="text-xl md:text-2xl font-semibold text-white mb-4">
+                        Workshop Bordir
+                        </h2>
+                        <div class="w-full aspect-video">
+                        <iframe class="w-full h-full rounded-lg shadow-md"
+                            src="https://www.youtube.com/embed/P2Zh-DSqh9U?si=wxooD3iZqjNDSVxO" title="YouTube video player"
+                            title="Workshop Bordir"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen>
+                        </iframe>
+                        </div>
+                    </div>
+
+                    <!-- Video 5 -->
+                    <div class="flex flex-col items-center">
+                        <h2 class="text-xl md:text-2xl font-semibold text-white mb-4">
+                        Workshop Sablon
+                        </h2>
+                        <div class="w-full aspect-video">
+                        <iframe class="w-full h-full rounded-lg shadow-md"
+                            src="https://www.youtube.com/embed/JTKybeRVDMg?si=Pm910btXQvqykfsO" title="YouTube video player"
+                            title="Workshop Finishing"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen>
+                        </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Akhir Bagian Workshop Kami -->
+        
+
+        <!-- Awal Bagian Kenapa Memilih Kami -->
+        <section class="py-8 bg-gray-50" id="kenapa-memilih">
+            <div class="text-center mb-10">
+                <h1 class="font-bold text-3xl md:text-4xl text-gray-900">
+                Kenapa Memilih Eha Konveksi?
+                </h1>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 max-w-6xl mx-auto px-4">
+                <!-- Tangan Pertama -->
+                <div class="bg-white rounded-lg shadow p-2 sm:p-6 flex flex-col items-center text-center">
+                    <div class="text-3xl sm:text-4xl mb-3">✋</div>
+                    <h3 class="font-semibold text-2xl sm:text-lg md:text-xl text-gray-800 mb-2">Tangan Pertama</h3>
+                    <p class="text-1xl sm:text-sm md:text-base text-gray-600">
+                        Kami adalah produsen langsung, sehingga Anda mendapatkan harga terjangkau tanpa perantara.
+                    </p>
+                </div>
+
+                <!-- Terpercaya -->
+                <div class="bg-white rounded-lg shadow p-2 sm:p-6 flex flex-col items-center text-center">
+                    <div class="text-3xl sm:text-4xl mb-3">✅</div>
+                    <h3 class="font-semibold text-2xl sm:text-lg md:text-xl text-gray-800 mb-2">Terpercaya</h3>
+                    <p class="text-1xl sm:text-sm md:text-base text-gray-600">
+                        Kepercayaan ribuan instansi dan komunitas adalah bukti komitmen kami dalam memberikan layanan terbaik.
+                    </p>
+                </div>
+
+                <!-- Ketepatan Waktu -->
+                <div class="bg-white rounded-lg shadow p-2 sm:p-6 flex flex-col items-center text-center">
+                    <div class="text-3xl sm:text-4xl mb-3">⏰</div>
+                    <h3 class="font-semibold text-2xl sm:text-lg md:text-xl text-gray-800 mb-2">Ketepatan Waktu</h3>
+                    <p class="text-1xl sm:text-sm md:text-base text-gray-600">
+                        Eha Konveksi sangat menghargai waktu Anda. Kami selalu menepati janji dalam setiap tahap produksi.
+                    </p>
+                </div>
+
+                <!-- Harga Termurah di Bandung -->
+                <div class="bg-white rounded-lg shadow p-2 sm:p-6 flex flex-col items-center text-center">
+                    <div class="text-3xl sm:text-4xl mb-3">💰</div>
+                    <h3 class="font-semibold text-2xl sm:text-lg md:text-xl text-gray-800 mb-2">Harga Termurah di Bandung</h3>
+                    <p class="text-1xl sm:text-sm md:text-base text-gray-600">
+                        Kami berkomitmen untuk memberikan harga terbaik tanpa mengorbankan kualitas, menjadikan kami sebagai pilihan termurah di Bandung.
+                    </p>
+                </div>
+            </div>
+        </section>    
+
+        <!-- Akhir Bagian Kenapa Memilih Kami -->
+
+
+        <!-- Awal Bagian Tentang Kami -->
+        <!-- <section class="py-16" id="about-us">
+            <div class="container mx-auto px-4 text-center">
+                <div class="max-w-xl mx-auto mb-10">
+                    <h5 class="font-bold text-3xl md:text-4xl leading-tight mb-3">Tentang Kami</h5>
+                </div>
+            </div>
+            <div class="container mx-auto px-4 max-w-5xl">
+                <div class="text-left">
+                    <h3 class="font-bold text-3xl mb-3 mt-8">Perjalanan Perusahaan</h3>
+                    <p class="text-gray-600 mb-4">
+                        Eha Konveksi telah menempuh perjalanan yang luar biasa sejak didirikan pada tahun 2013. Dengan pengalaman dan keahlian bertahun-tahun di industri konveksi, kami telah menjadi nama yang mapan dan terpercaya untuk segala kebutuhan manufaktur pakaian Anda. Komitmen kami terhadap kualitas, inovasi, dan kepuasan pelanggan telah menjadi kekuatan pendorong di balik kesuksesan kami.
+                    </p>
+                    <h3 class="font-bold text-3xl mb-3 mt-8">Maksud dan Tujuan</h3>
+                    <p class="text-gray-600 mb-4">
+                        Di Eha Konveksi, tujuan kami adalah memberikan solusi sempurna dalam bidang pembuatan produk kaos, seragam, celana, jaket dan lain-lain. Kami bertujuan untuk menjadi mitra terpercaya bagi bisnis, organisasi, dan individu yang mencari produk pakaian berkualitas tinggi dan sesuai kebutuhan. Tujuan kami adalah memenuhi dan melampaui harapan klien kami dengan memberikan keahlian luar biasa, desain inovatif, dan produksi tepat waktu.
+                    </p>
+                    <h3 class="font-bold text-3xl mb-3 mt-8">Pengantar Tim</h3>
+                    <p class="text-gray-600 mb-4">
+                        Di balik setiap usaha yang sukses terdapat tim yang berdedikasi dan berbakat. Eha Konveksi dengan bangga memperkenalkan tim profesional kami yang penuh semangat dan bertekad untuk mewujudkan visi Anda. Desainer kami yang terampil, penjahit berpengalaman, dan ahli kontrol kualitas yang teliti bekerja sama untuk memastikan setiap pakaian yang diproduksi mencerminkan komitmen kami terhadap keunggulan. Dengan perhatian terhadap detail dan komitmen terhadap kepuasan pelanggan, tim kami adalah landasan kesuksesan kami.
+                    </p>
+                    <h3 class="font-bold text-3xl mb-3 mt-8">Penawaran</h3>
+                    <p class="text-gray-600 mb-4">
+                        Di Eha Konveksi, kami menawarkan rangkaian lengkap layanan pembuatan pakaian yang disesuaikan dengan kebutuhan spesifik Anda. Apakah Anda memerlukan kaos khusus untuk merek Anda, seragam bergaya untuk tim Anda, atau jaket trendi untuk lini fesyen Anda, kami siap membantu Anda. Fasilitas tercanggih dan teknologi canggih kami memungkinkan kami memproduksi pakaian berkualitas tinggi dengan presisi dan efisiensi. Dengan beragam pilihan bahan, warna, dan gaya, kami menjamin pakaian Anda akan menjadi representasi sempurna dari merek atau gaya pribadi Anda.
+                    </p>
+                    <h3 class="font-bold text-3xl mb-3 mt-8">Pendapat Pelanggan</h3>
+                    <div class="bg-gray-100 p-4 rounded-lg mb-4">
+                        <blockquote class="text-gray-600 italic">
+                            <p class="mb-0">"Eha Konveksi telah menjadi mitra terpercaya kami selama beberapa tahun. Perhatian mereka terhadap detail dan komitmen terhadap kualitas secara konsisten melebihi harapan kami."</p>
+                            <footer class="text-sm mt-2 not-italic text-gray-500">Perusahaan Pakaian ABC</footer>
+                        </blockquote>
+                    </div>
+                    <div class="bg-gray-100 p-4 rounded-lg mb-4">
+                        <blockquote class="text-gray-600 italic">
+                            <p class="mb-0">"Bekerja dengan Eha Konveksi merupakan pengalaman yang luar biasa. Keahlian dan profesionalisme mereka menjadikan mereka pilihan utama untuk semua kebutuhan seragam kami."</p>
+                            <footer class="text-sm mt-2 not-italic text-gray-500">XYZ Corporation</footer>
+                        </blockquote>
+                    </div>
+                    <div class="bg-gray-100 p-4 rounded-lg mb-4">
+                        <blockquote class="text-gray-600 italic">
+                            <p class="mb-0">"Pakaian yang diproduksi oleh Eha Konveksi telah membantu meningkatkan merek ke tingkat yang lebih tinggi. Dedikasi mereka untuk menghasilkan produk yang luar biasa tidak ada bandingannya."</p>
+                            <footer class="text-sm mt-2 not-italic text-gray-500">Butik Fashionista</footer>
+                        </blockquote>
+                    </div>
+                    <h3 class="font-bold text-3xl mb-3 mt-8">Prestasi</h3>
+                    <ul class="list-disc list-inside space-y-2 text-gray-600">
+                        <li>Berhasil mengirimkan lebih dari 100.000 pesanan pakaian khusus kepada klien yang puas</li>
+                        <li>Menjalin kemitraan jangka panjang dengan brand ternama nasional</li>
+                        <li>Mengumpulkan pengakuan atas keahlian luar biasa dan desain inovatif kami</li>
+                        <li>Mempertahankan reputasi luar biasa atas komitmen kami terhadap kepuasan pelanggan</li>
+                    </ul>
+                    <h3 class="font-bold text-3xl mb-3 mt-8">Situs Web Resmi Kami</h3>
+                    <p class="text-gray-600">
+                        <a href="http://www.ehakonveksi.id" class="text-blue-600 hover:underline">www.ehakonveksi.id</a> dan
+                        <a href="http://www.ehakonveksi.com" class="text-blue-600 hover:underline">www.ehakonveksi.com</a>
+                    </p>
+                </div>
+            </div>
+        </section> -->
+        <!-- Akhir Bagian Tentang Kami -->
+
+        <!-- Bagian Testimoni Pelanggan -->
+        <section class="pt-0 pb-6 bg-gray-100">
+            <div class="container mx-auto px-4">
+                <h2 class="text-2xl text-center font-semibold text-gray-800 pt-4 mb-4">Testimoni Pelanggan</h2>
+                <div class="overflow-hidden relative">
+                    <div class="flex gap-8 py-4 animate-slide-left">
+                        <img src="/assets/img/testimoni/1.jpeg" alt="Logo Instansi 1" class="h-16 w-auto md:h-25 md:w-32 flex-shrink-0 grayscale hover:grayscale-0 transition duration-250" />
+                        <img src="/assets/img/testimoni/2.jpeg" alt="Logo Instansi 2" class="h-16 w-auto md:h-25 md:w-32 flex-shrink-0 grayscale hover:grayscale-0 transition duration-250" />
+                        <img src="/assets/img/testimoni/3.jpeg" alt="Logo Instansi 3" class="h-16 w-auto md:h-25 md:w-32 flex-shrink-0 hover:grayscale-0 transition duration-250" />
+                        <img src="/assets/img/testimoni/5.jpg" alt="Logo Instansi 4" class="h-16 w-auto md:h-25 md:w-32 flex-shrink-0 hover:grayscale-0 transition duration-250" />
+                        <img src="/assets/img/testimoni/6.jpg" alt="Logo Instansi 5" class="h-16 w-auto md:h-25 md:w-32 flex-shrink-0 hover:grayscale-0 transition duration-250" />
+                        <img src="/assets/img/testimoni/7.jpg" alt="Logo Instansi 6" class="h-16 w-auto md:h-25 md:w-32 flex-shrink-0 hover:grayscale-0 transition duration-250" />
+                        <img src="/assets/img/testimoni/8.jpg" alt="Logo Instansi 7" class="h-16 w-auto md:h-25 md:w-32 flex-shrink-0 hover:grayscale-0 transition duration-250" />
+                        <img src="/assets/img/testimoni/1.jpeg" alt="Logo Instansi 1" class="h-16 w-auto md:h-25 md:w-32 flex-shrink-0 grayscale hover:grayscale-0 transition duration-250" />
+                        <img src="/assets/img/testimoni/2.jpeg" alt="Logo Instansi 2" class="h-16 w-auto md:h-25 md:w-32 flex-shrink-0 grayscale hover:grayscale-0 transition duration-250" />
+                        <img src="/assets/img/testimoni/3.jpeg" alt="Logo Instansi 3" class="h-16 w-auto md:h-25 md:w-32 flex-shrink-0 hover:grayscale-0 transition duration-250" />
+                        <img src="/assets/img/testimoni/5.jpg" alt="Logo Instansi 4" class="h-16 w-auto md:h-25 md:w-32 flex-shrink-0 hover:grayscale-0 transition duration-250" />
+                        <img src="/assets/img/testimoni/6.jpg" alt="Logo Instansi 5" class="h-16 w-auto md:h-25 md:w-32 flex-shrink-0 hover:grayscale-0 transition duration-250" />
+                        <img src="/assets/img/testimoni/7.jpg" alt="Logo Instansi 6" class="h-16 w-auto md:h-25 md:w-32 flex-shrink-0 hover:grayscale-0 transition duration-250" />
+                        <img src="/assets/img/testimoni/8.jpg" alt="Logo Instansi 7" class="h-16 w-auto md:h-25 md:w-32 flex-shrink-0 hover:grayscale-0 transition duration-250" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Akhir Bagian Testimoni Pelanggan -->
+
+
+        <!-- Awal Bagian Kontak Kami -->
+        <section id="kontak" class="py-12">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-4">Kontak Kami</h2>
+                <p class="text-center text-lg text-gray-600 mb-12">Hubungi kami jika ada pertanyaan atau ingin melakukan pemesanan.</p>
+
+                <div class="grid grid-cols-3 gap-3 md:gap-6 mb-12">
+                    <div class="flex flex-col items-center p-3 md:p-6 bg-white rounded-lg shadow-md">
+                        <svg class="w-8 h-8 md:w-12 md:h-12 text-blue-600 mb-2 md:mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.26.963a11.97 11.97 0 005.58 5.58l.964-2.26a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.75 21 3 14.25 3 6V5z"></path></svg>
+                        <p class="font-semibold text-sm md:text-lg text-center mb-1 md:mb-2">+6282211711911</p>
+                        <a href="tel:+6282217111911" class="text-xs md:text-base text-blue-600 text-center hover:underline flex-wrap">Hubungi Via Telpon</a>
+                    </div>
+                    <div class="flex flex-col items-center p-3 md:p-6 bg-white rounded-lg shadow-md">
+                        <img class="w-8 h-8 md:w-12 md:h-12 mb-2 md:mb-4" src="/assets/img/icon/wa.png" alt="WhatsApp Icon">
+                        <p class="font-semibold text-sm md:text-lg text-center mb-1 md:mb-2">+6282211711911</p>
+                        <a href="https://wa.me/6282211711911" target="_blank" class="text-xs md:text-base text-center text-blue-600 hover:underline flex-wrap">Hubungi Via WhatsApp</a>
+                    </div>
+                    <div class="flex flex-col items-center p-3 md:p-6 bg-white rounded-lg shadow-md overflow-hidden">
+                        <img class="w-8 h-8 md:w-12 md:h-12 mb-2 md:mb-4" src="/assets/img/icon/email.png" alt="Email Icon">
+                        <p class="font-semibold text-sm md:text-lg text-center mb-1 md:mb-2 block max-w-full md:break-all md:whitespace-normal break-words">
+                            ehakonveksi@gmail.com
+                        </p>
+                        <a href="mailto:ehakonveksi@gmail.com" class="text-xs md:text-base text-blue-600 text-center hover:underline">Kirim Email</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Akhir Bagian Kontak Kami -->
+
+
+        <!-- Awal Bagian Sosial Media -->
+        <section id="sosial-media" class="py-8 bg-gray-50">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Ikuti Kami</h2>
+                <p class="text-lg text-gray-600 mb-12">Temukan update terbaru dan karya kami di media sosial.</p>
+                
+                <div class="flex flex-wrap justify-center gap-6">
+                    <a href="https://facebook.com/eha-konveksi" target="_blank" class="flex items-center justify-center w-16 h-16 bg-gray-200 text-gray-800 rounded-full hover:bg-blue-600 hover:text-white transition-colors duration-300">
+                        <img class="w-10 h-10" src="/assets/img/icon/fb.png" alt="Facebook Logo">
+                    </a>
+                    
+                    <a href="https://www.instagram.com/ehakonveksi?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="flex items-center justify-center w-16 h-16 bg-gray-200 text-gray-800 rounded-full hover:bg-pink-600 hover:text-white transition-colors duration-300">
+                        <img class="w-10 h-10" src="/assets/img/icon/ig.png" alt="Instagram Logo">
+                    </a>
+                    
+                    <a href="https://youtube.com/eha-konveksi" target="_blank" class="flex items-center justify-center w-16 h-16 bg-gray-200 text-gray-800 rounded-full hover:bg-red-600 hover:text-white transition-colors duration-300">
+                        <img class="w-10 h-10" src="/assets/img/icon/tiktok.png" alt="Tiktok Logo">
+                    </a>
+
+                    <a href="http://www.youtube.com/@ehakonveksi512" target="_blank" class="flex items-center justify-center w-16 h-16 bg-gray-200 text-gray-800 rounded-full hover:bg-red-600 hover:text-white transition-colors duration-300">
+                        <img class="w-10 h-8" src="/assets/img/icon/ytb.png" alt="YouTube Logo">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Akhir Bagian Sosial Media -->
+
+
+        <!-- <section class="py-16" id="sosial-media">
+            <div class="container mx-auto px-4 text-center">
+                <h1 class="font-bold text-4xl mb-3">Marketing Strategies</h1>
+                <p class="mb-6 text-gray-600">Join 40,000+ other marketers and get proven strategies on email marketing</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img class="w-full" src="assets/img/marketing/marketing01.png" alt="" />
+                        <div class="p-6 text-left">
+                            <p class="text-gray-600 text-sm">By <a class="font-bold text-decoration-none mr-1" href="#">Abdullah</a>|<span class="ml-1">03 March 2019</span></p>
+                            <h3 class="font-bold text-xl">Increasing Prosperity With Positive Thinking</h3>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img class="w-full" src="assets/img/marketing/marketing02.png" alt="" />
+                        <div class="p-6 text-left">
+                            <p class="text-gray-600 text-sm">By <a class="font-bold text-decoration-none mr-1" href="#">Abdullah</a>|<span class="ml-1">03 March 2019</span></p>
+                            <h3 class="font-bold text-xl">Motivation Is The First Step To Success</h3>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img class="w-full" src="assets/img/marketing/marketing03.png" alt="" />
+                        <div class="p-6 text-left">
+                            <p class="text-gray-600 text-sm">By <a class="font-bold text-decoration-none mr-1" href="#">Abdullah</a>|<span class="ml-1">03 March 2019</span></p>
+                            <h3 class="font-bold text-xl">Success Steps For Your Personal Or Business Life</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- Awal Bagian Footer -->
+        <section class="py-16">
+            <div class="container mx-auto px-4 border-t pt-16">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="order-1">
+                        <img class="mb-4" src="assets/img/icon/eha-2.png" width="230" alt="Eha Konveksi" />
+                    </div>
+                    <div class="order-3 lg:order-2">
+                        <p class="text-xl font-semibold mb-4">Quick Links</p>
+                        <ul class="list-none mb-0 space-y-2 text-gray-600">
+                            <li><a class="hover:text-blue-600 transition duration-300" href="#!">About us</a></li>
+                            <li><a class="hover:text-blue-600 transition duration-300" href="#!">Blog</a></li>
+                            <li><a class="hover:text-blue-600 transition duration-300" href="#!">Contact</a></li>
+                            <li><a class="hover:text-blue-600 transition duration-300" href="#!">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="order-4 lg:order-3">
+                        <p class="text-xl font-semibold mb-4">Legal stuff</p>
+                        <ul class="list-none mb-0 space-y-2 text-gray-600">
+                            <li><a class="hover:text-blue-600 transition duration-300" href="#!">Disclaimer</a></li>
+                            <li><a class="hover:text-blue-600 transition duration-300" href="#!">Financing</a></li>
+                            <li><a class="hover:text-blue-600 transition duration-300" href="#!">Privacy Policy</a></li>
+                            <li><a class="hover:text-blue-600 transition duration-300" href="#!">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                    <div class="order-2 lg:order-4">
+                        <p class="text-xl font-semibold mb-4">Knowing you're always on the best energy deal.</p>
+                        <form class="mb-3">
+                            <input class="w-full p-2 border border-gray-300 rounded-md mb-2" type="email" placeholder="Enter your phone Number" aria-label="phone" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="py-4">
+            <div class="container mx-auto px-4 border-t pt-4 text-center">
+                <p class="text-sm text-gray-600">Copyright &copy; EHA KONVEKSI | <script>document.write(new Date().getFullYear())</script></p>
+            </div>
+        </section>
+        <!-- Akhir Bagian Footer -->
+
+    </main>
+
+    <script>
+        const button = document.getElementById('mobile-menu-button');
+        const menu = document.getElementById('mobile-menu');
+
+        // Klik tombol burger → buka/tutup menu
+        button.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Klik link di dalam menu → tutup menu
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+    </script>
+
+
+</body>
+</html>

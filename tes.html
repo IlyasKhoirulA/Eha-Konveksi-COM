@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Vendor Konveksi Profesional | Apparel & Seragam Kerja</title>
+  <title>Eha Konveksi | Home</title>
+
+    <link href="./dist/output.css" rel="stylesheet" />
+
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/img/icon/eha-1.png">
+    <!-- <link rel="manifest" href="/assets/img/favicons/manifest.json">
+    <meta name="msapplication-TileImage" content="/assets/img/favicons/mstile-150x150.png"> -->
+    <meta name="theme-color" content="#ffffff">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: '#0b1a33',
+            navySoft: '#12284d'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="font-sans text-gray-800 bg-white">
+
+<!-- Tombol Pop Up WhatsApp -->
+<div class="fixed bottom-4 right-4 z-50 flex items-center gap-3 group">
+
+  <!-- Text Hubungi Kami (selalu tampil) -->
+  <span class="bg-white text-gray-800 px-4 py-2 rounded-lg shadow-md text-sm font-semibold border border-gray-100">
+  Hubungi Kami
+</span>
+
+  <!-- Tooltip Hover -->
+  <span class="bg-white text-gray-800 px-4 py-2 rounded-lg shadow-md text-sm font-medium 
+               opacity-0 group-hover:opacity-100 transition-opacity duration-300 
+               pointer-events-none border border-gray-100 absolute right-16 bottom-1/2 translate-y-1/2 hidden md:block">
+    Kami Siap Membantu kebutuhan Anda →
+  </span>
+
+  <!-- Button WhatsApp -->
+  <a href="https://wa.me/6282211711911?text=Halo Eha Konveksi, saya ingin bertanya tentang produk Anda."
+     class="bg-green-500 w-14 h-14 flex items-center justify-center rounded-full shadow-lg
+            transform hover:scale-110 transition-transform duration-200"
+     target="_blank"
+     aria-label="Hubungi kami via WhatsApp">
+    <img src="./assets/img/icon/wa.png" alt="WhatsApp" class="w-8 h-8">
+  </a>
+
+</div>
+<!-- Akhir Tombol Pop Up WhatsApp -->
+
+<!-- ================= NAVBAR ================= -->
+<header class="fixed w-full z-50 bg-white/80 backdrop-blur border-b">
+  <nav class="bg-white shadow-md sticky top-0 z-50">
+            <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+                <a class="flex items-center" href="/index.html">
+                    <img src="/assets/img/icon/eha-2.png" height="55" alt="logo" class="h-14" />
+                </a>
+
+                <div class="space-x-8 hidden md:flex items-center" id="navbar-menu-desktop">
+                    <ul class="flex space-x-6 text-gray-600">
+                        <li><a class="hover:text-blue-600 transition duration-300 font-medium" href="#top">Beranda</a></li>
+                        <li><a class="hover:text-blue-600 transition duration-300 font-medium" href="/portfolio/index.html">Portfolio</a></li>
+                        <li><a class="hover:text-blue-600 transition duration-300 font-medium" href="#penawaran">Penawaran</a></li>
+                        <li><a class="hover:text-blue-600 transition duration-300 font-medium" href="#kontak">Kontak</a></li>
+                        <li><a class="hover:text-blue-600 transition duration-300 font-medium" href="#sosial-media">Sosial Media</a></li>
+                        <li><a class="hover:text-blue-600 transition duration-300 font-medium" href="/tentang-kami.html">Tentang Kami</a></li>
+                    </ul>
+                </div>
+
+                <!-- <a href="#kontak" class="bg-slate-900 text-white px-4 py-2 rounded-lg text-sm">
+                        Konsultasi
+                </a> -->
+
+                <button id="mobile-menu-button" class="md:hidden text-gray-600 focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+
+            <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+                <a href="#top" class="block py-3 px-6 text-gray-700 hover:bg-gray-100 transition duration-300">Beranda</a>
+                <a href="/portfolio/index.html" class="block py-3 px-6 text-gray-700 hover:bg-gray-100 transition duration-300">Portfolio</a>
+                <a href="#penawaran" class="block py-3 px-6 text-gray-700 hover:bg-gray-100 transition duration-300">Penawaran</a>
+                <a href="#kontak" class="block py-3 px-6 text-gray-700 hover:bg-gray-100 transition duration-300">Kontak</a>
+                <a href="#sosial-media" class="block py-3 px-6 text-gray-700 hover:bg-gray-100 transition duration-300">Sosial Media</a>
+                <a href="/tentang-kami.html" class="block py-3 px-6 text-gray-700 hover:bg-gray-100 transition duration-300">Tentang Kami</a>
+            </div>
+        </nav>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="pt-36 pb-28 bg-gradient-to-br from-navy to-navySoft text-white relative overflow-hidden">
+  
+  <!-- decorative shape -->
+  <div class="absolute -right-32 -top-32 w-[500px] h-[500px] bg-white/5 rounded-full"></div>
+
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center relative z-10">
+    
+    <div>
+      <h1 class="text-4xl md:text-5xl font-bold leading-tight">
+        Vendor Konveksi  
+        <span class="block text-blue-300 mt-2">
+          Andal untuk Perusahaan & Instansi
+        </span>
+      </h1>
+
+      <p class="mt-6 text-lg text-gray-200 max-w-xl">
+        Produksi seragam kerja, jaket, rompi, kaos, jas hujan, dan apparel
+        custom dengan sistem kerja profesional dan standar industri.
+      </p>
+
+      <div class="mt-10 flex gap-4">
+        <a href="https://wa.me/6282211711911"
+           class="bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-lg font-semibold shadow-lg transition">
+          Konsultasi Gratis
+        </a>
+        <a href="#produk"
+           class="border border-white/40 px-8 py-4 rounded-lg hover:bg-white/10 transition">
+          Lihat Produk
+        </a>
+      </div>
+
+      <!-- stats -->
+      <div class="mt-12 grid grid-cols-3 gap-6 text-sm text-gray-200">
+        <div>
+          <p class="text-2xl font-bold text-white">10+</p>
+          <p>Tahun Produksi</p>
+        </div>
+        <div>
+          <p class="text-2xl font-bold text-white">500+</p>
+          <p>Klien</p>
+        </div>
+        <div>
+          <p class="text-2xl font-bold text-white">10K+</p>
+          <p>Produk / Bulan</p>
+        </div>
+      </div>
+    </div>
+
+    <img src="assets/img/bg-section-2.png"
+         class="rounded-2xl shadow-2xl"
+         alt="Produksi Konveksi">
+  </div>
+</section>
+
+<!-- ================= TENTANG ================= -->
+<section id="tentang" class="py-24">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+    <div>
+      <h2 class="text-3xl font-bold text-navy mb-6">
+        Konveksi dengan Sistem Kerja Terukur
+      </h2>
+      <p class="text-lg text-gray-600 leading-relaxed">
+        EHA Konveksi melayani kebutuhan apparel kerja untuk perusahaan,
+        instansi, dan organisasi dengan fokus pada kualitas, konsistensi,
+        dan ketepatan waktu. Seluruh proses dilakukan oleh tim internal
+        dengan pengawasan standar produksi.
+      </p>
+    </div>
+    <div class="grid grid-cols-2 gap-6">
+      <div class="p-6 border rounded-xl">
+        <p class="text-2xl font-bold text-navy">Tangan Pertama</p>
+        <p class="text-gray-600">Harga Tangan Pertama Langsung dari pabrik</p>
+      </div>
+      <div class="flex flex-col p-6 border rounded-xl">
+        <p class="text-2xl font-bold text-navy text-blue-600">Kapasitas Besar</p>
+        <p class="text-gray-600">Siap Membantu kebutuhan Seragam anda secara besar</p>
+      </div>
+      <div class="p-6 border rounded-xl">
+        <p class="text-2xl font-bold text-navy">Tepat Waktu</p>
+        <p class="text-gray-600">Pengerjaan Cepat & Tepat Waktu</p>
+      </div>
+      <div class="p-6 border rounded-xl">
+        <p class="text-2xl font-bold text-navy">Garansi Produk</p>
+        <p class="text-gray-600">Kami siap memberikan garansi produk</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PRODUK ================= -->
+<section id="produk" class="bg-gray-50 py-24">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-center text-3xl font-bold text-navy mb-14">
+      Produk Unggulan
+    </h2>
+
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <div class="group bg-white p-8 rounded-xl shadow hover:shadow-xl transition">
+        <h4 class="font-semibold text-lg mb-2">Seragam Kerja</h4>
+        <p class="text-gray-600 text-sm">Kantor, pabrik, lapangan</p>
+      </div>
+      <div class="group bg-white p-8 rounded-xl shadow hover:shadow-xl transition">
+        <h4 class="font-semibold text-lg mb-2">Jaket</h4>
+        <p class="text-gray-600 text-sm">Bomber, varsity, parka</p>
+      </div>
+      <div class="group bg-white p-8 rounded-xl shadow hover:shadow-xl transition">
+        <h4 class="font-semibold text-lg mb-2">Rompi</h4>
+        <p class="text-gray-600 text-sm">Safety & event</p>
+      </div>
+      <div class="group bg-white p-8 rounded-xl shadow hover:shadow-xl transition">
+        <h4 class="font-semibold text-lg mb-2">Kaos</h4>
+        <p class="text-gray-600 text-sm">Cotton combed</p>
+      </div>
+      <div class="group bg-white p-8 rounded-xl shadow hover:shadow-xl transition">
+        <h4 class="font-semibold text-lg mb-2">Jas Hujan</h4>
+        <p class="text-gray-600 text-sm">Custom logo</p>
+      </div>
+      <div class="group bg-white p-8 rounded-xl shadow hover:shadow-xl transition">
+        <h4 class="font-semibold text-lg mb-2">Topi & Aksesoris</h4>
+        <p class="text-gray-600 text-sm">Merchandise</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROSES ================= -->
+<section id="proses" class="py-24">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-center text-3xl font-bold text-navy mb-14">
+      Alur Pemesanan
+    </h2>
+
+    <div class="grid md:grid-cols-4 gap-10 text-center">
+      <div>
+        <p class="text-5xl font-bold text-gray-200">01</p>
+        <h4 class="font-semibold mt-2">Konsultasi</h4>
+      </div>
+      <div>
+        <p class="text-5xl font-bold text-gray-200">02</p>
+        <h4 class="font-semibold mt-2">Desain & Sample</h4>
+      </div>
+      <div>
+        <p class="text-5xl font-bold text-gray-200">03</p>
+        <h4 class="font-semibold mt-2">Produksi</h4>
+      </div>
+      <div>
+        <p class="text-5xl font-bold text-gray-200">04</p>
+        <h4 class="font-semibold mt-2">Pengiriman</h4>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section id="kontak" class="bg-navy py-24 text-center text-white">
+  <h2 class="text-3xl font-bold mb-4">
+    Siap Produksi Apparel Anda?
+  </h2>
+  <p class="text-gray-300 mb-8">
+    Diskusikan kebutuhan Anda bersama tim kami
+  </p>
+  <a href="https://wa.me/6282211711911"
+     class="inline-block bg-green-500 px-10 py-4 rounded-lg font-semibold shadow-lg hover:opacity-90">
+    Hubungi via WhatsApp
+  </a>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-gray-900 text-gray-400 py-8 text-center text-sm">
+  © 2026 EHA Konveksi. All Rights Reserved.
+</footer>
+
+</body>
+</html>
