@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Produksi | Eha Konveksi</title>
+
+    <link href="./dist/output.css" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/img/icon/eha-1.png">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body>
+
+    <!-- Tombol Pop Up WhatsApp -->
+    <div class="fixed bottom-4 right-4 z-50 flex items-center gap-3 group">
+    <span class="bg-white text-gray-800 px-4 py-2 rounded-lg shadow-md text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none border border-gray-100 relative">
+        Kami Siap Membantu kebutuhan Anda &rarr;
+        <span class="absolute top-1/2 -right-1 -translate-y-1/2 w-2 h-2 bg-white rotate-45 border-t border-r border-gray-100"></span>
+    </span>
+
+    <a href="https://wa.me/6282211711911?text=Halo Eha Konveksi, saya ingin bertanya tentang produk Anda." 
+        class="bg-green-300 text-white w-14 h-14 flex items-center justify-center rounded-full shadow-lg transform hover:scale-110 transition-transform duration-200"
+        target="_blank" 
+        aria-label="Hubungi kami via WhatsApp">
+        <img src="./assets/img/icon/wa.png" alt="WA" class="w-8 h-8">
+    </a>
+    </div>
+    <!-- Akhir Tombol Pop Up WhatsApp -->
+
+
+    <main class="main" id="top">
+
+        <!-- Awal Bagian Navbar -->
+        <nav class="bg-white shadow-md sticky top-0 z-50">
+            <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+                <a class="flex items-center" href="/index.html">
+                    <img src="/assets/img/icon/eha-2.png" height="55" alt="logo" class="h-14" />
+                </a>
+
+                <div class="space-x-8 hidden md:flex items-center" id="navbar-menu-desktop">
+                    <ul class="flex space-x-6 text-gray-600">
+                        <li><a class="hover:text-blue-600 transition duration-300 font-medium" href="#top">Beranda</a></li>
+                        <li><a class="hover:text-blue-600 transition duration-300 font-medium" href="/portfolio/index.html">Portfolio</a></li>
+                        <li><a class="hover:text-blue-600 transition duration-300 font-medium" href="#penawaran">Penawaran</a></li>
+                        <li><a class="hover:text-blue-600 transition duration-300 font-medium" href="#kontak">Kontak</a></li>
+                        <li><a class="hover:text-blue-600 transition duration-300 font-medium" href="#sosial-media">Sosial Media</a></li>
+                        <li><a class="hover:text-blue-600 transition duration-300 font-medium" href="/tentang-kami.html">Tentang Kami</a></li>
+                    </ul>
+                </div>
+
+                <!-- <a href="#kontak" class="bg-slate-900 text-white px-4 py-2 rounded-lg text-sm">
+                        Konsultasi
+                </a> -->
+
+                <button id="mobile-menu-button" class="md:hidden text-gray-600 focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+
+            <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+                <a href="#top" class="block py-3 px-6 text-gray-700 hover:bg-gray-100 transition duration-300">Beranda</a>
+                <a href="/portfolio/index.html" class="block py-3 px-6 text-gray-700 hover:bg-gray-100 transition duration-300">Portfolio</a>
+                <a href="#penawaran" class="block py-3 px-6 text-gray-700 hover:bg-gray-100 transition duration-300">Penawaran</a>
+                <a href="#kontak" class="block py-3 px-6 text-gray-700 hover:bg-gray-100 transition duration-300">Kontak</a>
+                <a href="#sosial-media" class="block py-3 px-6 text-gray-700 hover:bg-gray-100 transition duration-300">Sosial Media</a>
+                <a href="/tentang-kami.html" class="block py-3 px-6 text-gray-700 hover:bg-gray-100 transition duration-300">Tentang Kami</a>
+            </div>
+        </nav>
+        <!-- Akhir Bagian Navbar -->
+
+        <!-- Awal Bagian Data Laporan Produksi -->
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-center items-center flex-row gap-6 space-between">
+            <h1 class="text-3xl font-bold text-navy">
+                Laporan Progressan Produksi
+            </h1>
+            <div>
+                <input 
+                    type="text"
+                    id="search-input"
+                    placeholder="Cari Pesanan Anda!..."
+                    class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+        </div>
+
+        <div class="max-w-6xl mx-auto px-6 mb-6 text-gray-600">
+            filter berdasarkan nama pemesan, model, jumlah, atau admin yang mengerjakan. Ketik di kolom pencarian untuk menemukan pesanan Anda dengan cepat.
+        </div>
+
+        <div class="overflow-x-auto max-w-6xl mx-auto px-6 mb-6">
+            <table class="min-w-full border border-gray-300">
+                <thead class="bg-blue-600 text-white">
+                    <tr class="border-b border-gray-300">
+                        <th class="px-4 py-2 border">Nama Pemesan</th>
+                        <th class="px-4 py-2 border">Model</th>
+                        <th class="px-4 py-2 border">Jumlah</th>
+                        <th class="px-4 py-2 border">Admin Siapa?</th>
+                        <th class="px-4 py-2 border">PO Masuk?</th>
+                        <th class="px-4 py-2 border">Target Selesai</th>
+
+                    </tr>
+                </thead>
+
+                <tbody id="DataLaporanProduksi" class="border-e-white divide-y divide-x divide-gray-200">
+                    <!-- Data API masuk ke sini -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Akhir Bagian Data Laporan Produksi -->
+
+
+        <section id="tentang" class="py-24">
+            <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                <h2 class="text-3xl font-bold text-navy mb-6">
+                    Konveksi dengan Sistem Kerja Terukur
+                </h2>
+                <p class="text-lg text-gray-600 leading-relaxed">
+                    EHA Konveksi melayani kebutuhan apparel kerja untuk perusahaan,
+                    instansi, dan organisasi dengan fokus pada kualitas, konsistensi,
+                    dan ketepatan waktu. Seluruh proses dilakukan oleh tim internal
+                    dengan pengawasan standar produksi.
+                </p>
+                </div>
+                <div class="grid grid-cols-2 gap-6">
+                <div class="p-6 border rounded-xl">
+                    <p class="text-2xl font-bold text-navy">Tangan Pertama</p>
+                    <p class="text-gray-600">Harga Tangan Pertama Langsung dari pabrik</p>
+                </div>
+                <div class="flex flex-col p-6 border rounded-xl">
+                    <p class="text-2xl font-bold text-navy text-blue-600">Kapasitas Besar</p>
+                    <p class="text-gray-600">Siap Membantu kebutuhan Seragam anda secara besar</p>
+                </div>
+                <div class="p-6 border rounded-xl">
+                    <p class="text-2xl font-bold text-navy">Tepat Waktu</p>
+                    <p class="text-gray-600">Pengerjaan Cepat & Tepat Waktu</p>
+                </div>
+                <div class="p-6 border rounded-xl">
+                    <p class="text-2xl font-bold text-navy">Garansi Produk</p>
+                    <p class="text-gray-600">Kami siap memberikan garansi produk</p>
+                </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Awal Bagian Proses  -->
+        <section id="proses" class="py-24">
+            <div class="max-w-7xl mx-auto px-6">
+                <h2 class="text-center text-3xl font-bold text-navy mb-14">
+                Alur Pemesanan
+                </h2>
+
+                <div class="grid md:grid-cols-4 gap-10 text-center">
+                <div>
+                    <p class="text-5xl font-bold text-gray-200">01</p>
+                    <h4 class="font-semibold mt-2">Konsultasi</h4>
+                </div>
+                <div>
+                    <p class="text-5xl font-bold text-gray-200">02</p>
+                    <h4 class="font-semibold mt-2">Desain & Sample</h4>
+                </div>
+                <div>
+                    <p class="text-5xl font-bold text-gray-200">03</p>
+                    <h4 class="font-semibold mt-2">Produksi</h4>
+                </div>
+                <div>
+                    <p class="text-5xl font-bold text-gray-200">04</p>
+                    <h4 class="font-semibold mt-2">Pengiriman</h4>
+                </div>
+                </div>
+            </div>
+        </section>
+        <!-- Akhir Bagian Proses  -->
+
+
+        <!-- Awal Bagian Kontak Kami -->
+        <section id="kontak" class="py-12">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-4">Kontak Kami</h2>
+                <p class="text-center text-lg text-gray-600 mb-12">Hubungi kami jika ada pertanyaan atau ingin melakukan pemesanan.</p>
+
+                <div class="grid grid-cols-3 gap-3 md:gap-6 mb-12">
+                    <div class="flex flex-col items-center p-3 md:p-6 bg-white rounded-lg shadow-md">
+                        <svg class="w-8 h-8 md:w-12 md:h-12 text-blue-600 mb-2 md:mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.26.963a11.97 11.97 0 005.58 5.58l.964-2.26a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.75 21 3 14.25 3 6V5z"></path></svg>
+                        <p class="font-semibold text-sm md:text-lg text-center mb-1 md:mb-2">+6282211711911</p>
+                        <a href="tel:+6282217111911" class="text-xs md:text-base text-blue-600 text-center hover:underline flex-wrap">Hubungi Via Telpon</a>
+                    </div>
+                    <div class="flex flex-col items-center p-3 md:p-6 bg-white rounded-lg shadow-md">
+                        <img class="w-8 h-8 md:w-12 md:h-12 mb-2 md:mb-4" src="/assets/img/icon/wa.png" alt="WhatsApp Icon">
+                        <p class="font-semibold text-sm md:text-lg text-center mb-1 md:mb-2">+6282211711911</p>
+                        <a href="https://wa.me/6282211711911" target="_blank" class="text-xs md:text-base text-center text-blue-600 hover:underline flex-wrap">Hubungi Via WhatsApp</a>
+                    </div>
+                    <div class="flex flex-col items-center p-3 md:p-6 bg-white rounded-lg shadow-md overflow-hidden">
+                        <img class="w-8 h-8 md:w-12 md:h-12 mb-2 md:mb-4" src="/assets/img/icon/email.png" alt="Email Icon">
+                        <p class="font-semibold text-sm md:text-lg text-center mb-1 md:mb-2 block max-w-full md:break-all md:whitespace-normal break-words">
+                            ehakonveksi@gmail.com
+                        </p>
+                        <a href="mailto:ehakonveksi@gmail.com" class="text-xs md:text-base text-blue-600 text-center hover:underline">Kirim Email</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Akhir Bagian Kontak Kami -->
+
+
+        <!-- Awal Bagian Sosial Media -->
+        <section id="sosial-media" class="py-8 bg-gray-50">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Ikuti Kami</h2>
+                <p class="text-lg text-gray-600 mb-12">Temukan update terbaru dan karya kami di media sosial.</p>
+                
+                <div class="flex flex-wrap justify-center gap-6">
+                    <a href="https://facebook.com/eha-konveksi" target="_blank" class="flex items-center justify-center w-16 h-16 bg-gray-200 text-gray-800 rounded-full hover:bg-blue-600 hover:text-white transition-colors duration-300">
+                        <img class="w-10 h-10" src="/assets/img/icon/fb.png" alt="Facebook Logo">
+                    </a>
+                    
+                    <a href="https://www.instagram.com/ehakonveksi?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="flex items-center justify-center w-16 h-16 bg-gray-200 text-gray-800 rounded-full hover:bg-pink-600 hover:text-white transition-colors duration-300">
+                        <img class="w-10 h-10" src="/assets/img/icon/ig.png" alt="Instagram Logo">
+                    </a>
+                    
+                    <a href="https://youtube.com/eha-konveksi" target="_blank" class="flex items-center justify-center w-16 h-16 bg-gray-200 text-gray-800 rounded-full hover:bg-red-600 hover:text-white transition-colors duration-300">
+                        <img class="w-10 h-10" src="/assets/img/icon/tiktok.png" alt="Tiktok Logo">
+                    </a>
+
+                    <a href="http://www.youtube.com/@ehakonveksi512" target="_blank" class="flex items-center justify-center w-16 h-16 bg-gray-200 text-gray-800 rounded-full hover:bg-red-600 hover:text-white transition-colors duration-300">
+                        <img class="w-10 h-8" src="/assets/img/icon/ytb.png" alt="YouTube Logo">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Akhir Bagian Sosial Media -->
+
+
+        <!-- Awal Bagian Footer -->
+        <section class="py-16">
+            <div class="container mx-auto px-4 border-t pt-16">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="order-1">
+                        <img class="mb-4" src="assets/img/icon/eha-2.png" width="230" alt="Eha Konveksi" />
+                    </div>
+                    <div class="order-3 lg:order-2">
+                        <p class="text-xl font-semibold mb-4">Quick Links</p>
+                        <ul class="list-none mb-0 space-y-2 text-gray-600">
+                            <li><a class="hover:text-blue-600 transition duration-300" href="#!">About us</a></li>
+                            <li><a class="hover:text-blue-600 transition duration-300" href="#!">Blog</a></li>
+                            <li><a class="hover:text-blue-600 transition duration-300" href="#!">Contact</a></li>
+                            <li><a class="hover:text-blue-600 transition duration-300" href="#!">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="order-4 lg:order-3">
+                        <p class="text-xl font-semibold mb-4">Legal stuff</p>
+                        <ul class="list-none mb-0 space-y-2 text-gray-600">
+                            <li><a class="hover:text-blue-600 transition duration-300" href="#!">Disclaimer</a></li>
+                            <li><a class="hover:text-blue-600 transition duration-300" href="#!">Financing</a></li>
+                            <li><a class="hover:text-blue-600 transition duration-300" href="#!">Privacy Policy</a></li>
+                            <li><a class="hover:text-blue-600 transition duration-300" href="#!">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                    <div class="order-2 lg:order-4">
+                        <p class="text-xl font-semibold mb-4">Knowing you're always on the best energy deal.</p>
+                        <form class="mb-3">
+                            <input class="w-full p-2 border border-gray-300 rounded-md mb-2" type="email" placeholder="Enter your phone Number" aria-label="phone" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="py-4">
+            <div class="container mx-auto px-4 border-t pt-4 text-center">
+                <p class="text-sm text-gray-600">Copyright &copy; EHA KONVEKSI | <script>document.write(new Date().getFullYear())</script></p>
+            </div>
+        </section>
+        <!-- Akhir Bagian Footer -->
+
+    </main>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: '#0b1a33',
+            navySoft: '#12284d'
+          }
+        }
+      }
+    }
+</script>
+
+<script>
+    const button = document.getElementById('mobile-menu-button');
+    const menu = document.getElementById('mobile-menu');
+
+    button.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+    });
+
+    document.querySelectorAll('#mobile-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+            menu.classList.add('hidden');
+        });
+    });
+</script>
+
+<script>
+async function loadData() {
+    try {
+        const response = await fetch("https://sheetdb.io/api/v1/qmsze3kocyuqe?sheet=MEI");
+        const data = await response.json();
+
+        let rows = "";
+
+        data.forEach(item => {
+
+            if (!item["NAMA PEMESAN"]) return;
+
+            rows += `
+                <tr class="hover:bg-blue-50 transition duration-200">
+
+                    <td class="px-6 py-4 font-semibold text-gray-800 whitespace-nowrap">
+                        ${item["NAMA PEMESAN"]}
+                    </td>
+
+                    <td class="px-6 py-4 text-gray-600 whitespace-nowrap">
+                        ${item["MODEL"]}
+                    </td>
+
+                    <td class="px-6 py-4 whitespace-nowrap">
+                        <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-bold">
+                            ${item["JUMLAH"]} pcs
+                        </span>
+                    </td>
+
+                    <td class="px-6 py-4 whitespace-nowrap">
+                        <div class="flex items-center gap-2">
+
+                            <span class="text-gray-700">
+                                ${item["Admin"]}
+                            </span>
+
+                        </div>
+                    </td>
+
+                    <td class="px-6 py-4 text-gray-600 whitespace-nowrap">
+                        ${item["MASUK"]}
+                    </td>
+
+                    <td class="px-6 py-4 text-gray-600 whitespace-nowrap">
+                        ${item["TARGET"]}
+                    </td>
+
+                </tr>
+`           ;
+        });
+
+        document.getElementById("DataLaporanProduksi").innerHTML = rows;
+
+    } catch(error) {
+        console.log(error);
+    }
+}
+
+loadData();
+</script>
+
+</body>
+
+</html>
